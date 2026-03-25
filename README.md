@@ -111,3 +111,24 @@ If you use this work please cite:
   year={2025}
 }
 ```
+
+## Pretrained Models
+
+Available on Hugging Face: https://huggingface.co/pulipakav-1/gerberformer
+```python
+from huggingface_hub import hf_hub_download
+from ultralytics import YOLO
+
+# Download and run main model
+path = hf_hub_download(
+    repo_id  = "pulipakav-1/gerberformer",
+    filename = "yolov8_gerber_alpha025.pt"
+)
+model   = YOLO(path)
+results = model.predict("your_pcb_image.jpg", conf=0.3)
+results[0].show()
+```
+
+## Results & Figures
+
+Available on Hugging Face: https://huggingface.co/pulipakav-1/gerberformer-results
