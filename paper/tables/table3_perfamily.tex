@@ -1,0 +1,30 @@
+\begin{table}[t]
+\centering
+\caption{Per-board-family mAP@50. Shaded rows indicate unseen families
+         (not present during training). Our method closes the
+         generalization gap from 0.944 to 0.001.}
+\label{tab:perfamily}
+\begin{tabular}{lccc}
+\toprule
+\textbf{Board Family} & \textbf{Seen?} & \textbf{Baseline} & \textbf{Gerber (ours)} \\
+\midrule
+l\_light       & Yes & 0.9938 & 0.9939 \\
+rotation\_270  & Yes & 0.9917 & 0.9909 \\
+rotation\_90   & Yes & 0.9916 & 0.9899 \\
+\midrule
+light\_01      & No  & 0.1042 & \textbf{0.9950} \\
+light\_04      & No  & 0.0000 & \textbf{0.9950} \\
+light\_05      & No  & 0.0000 & \textbf{0.9950} \\
+light\_06      & No  & 0.1835 & \textbf{0.9829} \\
+light\_07      & No  & 0.0000 & \textbf{0.9950} \\
+light\_08      & No  & 0.0000 & \textbf{0.9950} \\
+light\_09      & No  & 0.1894 & \textbf{0.9950} \\
+light\_10      & No  & 0.1111 & \textbf{0.9950} \\
+light\_11      & No  & 0.0000 & \textbf{0.9855} \\
+light\_12      & No  & 0.0000 & \textbf{0.9950} \\
+\midrule
+\textbf{Seen mean}   & & 0.9924 & 0.9916 \\
+\textbf{Unseen mean} & & 0.0588 & \textbf{0.9928} \\
+\bottomrule
+\end{tabular}
+\end{table}

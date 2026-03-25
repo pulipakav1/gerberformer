@@ -1,0 +1,19 @@
+\begin{table}[t]
+\centering
+\caption{Per-class AP@50 on the PCB defect test set.}
+\label{tab:perclass}
+\begin{tabular}{lcc}
+\toprule
+\textbf{Defect Class} & \textbf{Baseline} & \textbf{Gerber (ours)} \\
+\midrule
+missing\_hole    & 0.9943 & 0.9937 \\
+mouse\_bite      & 0.9949 & \textbf{0.9949} \\
+open\_circuit    & 0.9941 & 0.9937 \\
+short            & 0.9923 & 0.9901 \\
+spurious\_copper & \textbf{0.9950} & \textbf{0.9950} \\
+spur             & 0.9871 & \textbf{0.9908} \\
+\midrule
+\textbf{Mean}    & 0.9930 & 0.9930 \\
+\bottomrule
+\end{tabular}
+\end{table}

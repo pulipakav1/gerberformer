@@ -1,0 +1,15 @@
+{
+  "baseline": {
+    "preprocess_ms": 0.958,
+    "inference_ms": 1.439,
+    "postprocess_ms": 0.988,
+    "total_ms": 3.385
+  },
+  "gerber_fused": {
+    "preprocess_ms": 0.787,
+    "inference_ms": 1.257,
+    "postprocess_ms": 0.829,
+    "total_ms": 2.873
+  },
+  "note": "No inference overhead from Gerber conditioning. Prior blended at preprocessing."
+}

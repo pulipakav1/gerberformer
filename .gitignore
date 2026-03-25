@@ -1,0 +1,14 @@
+__pycache__/
+*.pyc
+*.pt
+*.pth
+*.onnx
+*.png
+*.jpg
+*.jpeg
+*.pdf
+pcb-defect-dataset/
+pcb-fused-dataset/
+pcb-fused-alpha*/
+.ipynb_checkpoints/
+.DS_Store

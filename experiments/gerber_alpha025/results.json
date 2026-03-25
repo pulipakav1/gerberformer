@@ -1,0 +1,39 @@
+{
+  "model": "yolov8s_gerber_alpha025",
+  "config": "configs/gerber_alpha025.yaml",
+  "val_map50": 0.992,
+  "val_map5095": 0.725,
+  "test_map50": 0.993,
+  "test_map5095": 0.714,
+  "per_class_ap50": {
+    "missing_hole": 0.9937,
+    "mouse_bite": 0.9949,
+    "open_circuit": 0.9937,
+    "short": 0.9901,
+    "spurious_copper": 0.995,
+    "spur": 0.9908
+  },
+  "per_family_map50": {
+    "l_light": 0.9939,
+    "light_01": 0.995,
+    "light_04": 0.995,
+    "light_05": 0.995,
+    "light_06": 0.9829,
+    "light_07": 0.995,
+    "light_08": 0.995,
+    "light_09": 0.995,
+    "light_10": 0.995,
+    "light_11": 0.9855,
+    "light_12": 0.995,
+    "rotation_270": 0.9909,
+    "rotation_90": 0.9899
+  },
+  "seen_mean": 0.9916,
+  "unseen_mean": 0.9928,
+  "speed_ms": {
+    "preprocess": 0.787,
+    "inference": 1.257,
+    "postprocess": 0.829,
+    "total": 2.873
+  }
+}

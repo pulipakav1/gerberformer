@@ -1,0 +1,17 @@
+backbone: swin_tiny_patch4_window7_224
+batch_size: 16
+description: GerberFormerV2 custom architecture with cross-modal fusion
+epochs: 50
+fpn_channels: 256
+grad_clip: 1.0
+img_size: 640
+lambda_cls: 1.0
+lambda_noobj: 0.5
+lambda_obj: 1.0
+lambda_reg: 2.0
+lambda_unc: 0.05
+lr: 0.0001
+num_anchors: 3
+num_classes: 6
+warmup_epochs: 5
+weight_decay: 0.05

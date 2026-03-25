@@ -1,0 +1,10 @@
+batch: 32
+data: data/yamls/pcb.yaml
+description: YOLOv8s trained on original PCB images (image-only baseline)
+device: 0
+epochs: 100
+imgsz: 640
+model: yolov8s.pt
+name: yolov8_baseline
+patience: 20
+project: experiments/baseline
