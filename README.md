@@ -76,3 +76,38 @@ Coming soon.
 
 ## License
 MIT
+
+
+## Model Weights
+
+Pretrained models are available on Google Drive:
+
+| Model | Description | Download |
+|-------|-------------|----------|
+| YOLOv8 baseline | Image-only, 100 epochs | [best.pt](YOUR_DRIVE_LINK_HERE) |
+| YOLOv8 + Gerber (α=0.25) | Main model, 100 epochs | [best.pt](YOUR_DRIVE_LINK_HERE) |
+| Ablation α=0.10 | 50 epochs | [best.pt](YOUR_DRIVE_LINK_HERE) |
+| Ablation α=0.50 | 50 epochs | [best.pt](YOUR_DRIVE_LINK_HERE) |
+
+To use a pretrained model:
+```python
+from ultralytics import YOLO
+model = YOLO('path/to/downloaded/best.pt')
+results = model.predict('your_image.jpg')
+```
+
+## Paper Figures
+
+Full resolution figures available in [paper/figures](YOUR_DRIVE_LINK_HERE).
+
+## Citation
+
+If you use this work please cite:
+```
+@article{gerberformer2025,
+  title={Design-Conditioned PCB Defect Detection via Synthetic Gerber Priors},
+  author={YOUR NAME},
+  journal={},
+  year={2025}
+}
+```
